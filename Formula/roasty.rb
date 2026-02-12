@@ -2,7 +2,7 @@ class Roasty < Formula
   desc "Real-time dashboard for Claude Code sessions in Ghostty"
   homepage "https://github.com/blessdog/Roasty"
   url "https://github.com/blessdog/Roasty/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "fbf45967c2fc33290a202b9b8960f708c7d10045c69c8148f627b9b624a83b9f"
+  sha256 "07e13b539b9578860740e1e541627780336b9e3ef25cb6642e8e4d513b98f351"
   license "MIT"
 
   depends_on "jq"
