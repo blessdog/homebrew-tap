@@ -2,7 +2,7 @@ class Roasty < Formula
   desc "Real-time dashboard for Claude Code sessions in Ghostty"
   homepage "https://github.com/blessdog/Roasty"
   url "https://github.com/blessdog/Roasty/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "e90c0fd084a29e49ff0de3adeb85b3d5f1e04d926ef888c67328ef9f29ff0a95"
+  sha256 "ea72572d5cd4002743e47bb5ced746fc1ab86e7f547889985c2612b1162351d5"
   license "MIT"
 
   depends_on "jq"
@@ -10,6 +10,7 @@ class Roasty < Formula
   def install
     libexec.install "dashboard.py"
     libexec.install "statusline.sh"
+    libexec.install "ghostty.config"
     libexec.install "setup.sh"
     libexec.install "launch.sh"
     libexec.install Dir["hooks"]
@@ -22,6 +23,9 @@ class Roasty < Formula
         - Creates Python venv with Rich at ~/.claude/dashboard/
         - Configures Claude Code hooks in ~/.claude/settings.json
         - Sets up the status line
+
+      Optional: 'roasty ghostty' installs a recommended Ghostty config
+      with tabs, splits, Citruszest theme, and Nerd Font support.
 
       Then open a Ghostty split and run 'roasty' to launch the dashboard.
     EOS
